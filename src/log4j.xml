@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<!-- # The five logging levels used by Log are (in order): # # 1. DEBUG (the 
+least serious) # 2. INFO # 3. WARN # 4. ERROR # 5. FATAL (the most serious) -->
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender name="label" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%m%n" />
+        </layout>
+    </appender>
+    
+    <appender name="textArea" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-d{yyyy-MM-dd HH:mm:ss}  [ %p ]  %m%n" />
+        </layout>
+    </appender>
+    
+
+    <appender name="DailyFile" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="./logs/info.log" />
+        <param name="Append" value="true" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d [%t] %p - %c.%M(%L) | %m%n" />
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">   
+            <param name="LevelMin" value="INFO" />   
+            <param name="LevelMax" value="INFO" />   
+        </filter>  
+    </appender>
+
+    <appender name="Error" class="org.apache.log4j.DailyRollingFileAppender">  
+        <param name="File" value="./logs/error.log"/>  
+        <param name="Append" value="true"/>  
+        <param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d [%t] %p - %c.%M(%L) | %m%n" />
+        </layout>  
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">   
+            <param name="LevelMin" value="ERROR" />   
+            <param name="LevelMax" value="ERROR" />   
+        </filter>  
+    </appender>  
+    
+    <appender name="debug" class="org.apache.log4j.DailyRollingFileAppender">  
+        <param name="File" value="./logs/debug.log"/>  
+        <param name="Append" value="true"/>  
+        <param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d [%t] %p - %c.%M(%L) | %m%n" />
+        </layout>  
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">   
+            <param name="LevelMin" value="DEBUG" />   
+            <param name="LevelMax" value="DEBUG" />   
+        </filter>  
+    </appender>  
+
+
+    <logger name="org.apache">
+        <level value="ERROR" />
+    </logger>
+ 
+    <logger name="com.opensymphony">
+        <level value="ERROR" />
+    </logger>
+
+    <logger name="org.springframework.aop.framework.Cglib2AopProxy">
+        <level value="ERROR" />
+    </logger>
+    <logger name="org.springframework">
+        <level value="ERROR" />
+    </logger>
+    <logger name="com.ibatis">
+        <level value="ERROR" />
+    </logger>
+	<!-- 
+    <logger name="java.sql" additivity="true">
+        <level value="debug"/>
+    </logger>
+  -->
+	
+  
+    <root>
+        <level value="info" />
+        <appender-ref ref="label" />
+        <appender-ref ref="textArea" />
+        <appender-ref ref="DailyFile" />
+        <appender-ref ref="Error" />
+		
+    </root>
+
+</log4j:configuration>

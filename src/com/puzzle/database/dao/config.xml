@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"   "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="config">
+    <!--查询全部用户 -->
+    <select id="selectActiveMQconfig" resultClass="com.puzzle.database.Entity">
+        select * from config_activemq    
+   </select>
+    <select id="selectConfig" resultClass="com.puzzle.database.Entity"  parameterClass="com.puzzle.database.Entity">
+        select * from config_config  where fileType=#fileType#   
+   </select>
+    <select id="selectCus_adaptor" resultClass="com.puzzle.database.Entity"  parameterClass="com.puzzle.database.Entity">
+        select * from config_cusAdaptor    where fileType=#fileType#
+   </select>
+    <select id="selectKafkaConfig" resultClass="com.puzzle.database.Entity">
+        select * from config_kafka    
+   </select>
+</sqlMap>

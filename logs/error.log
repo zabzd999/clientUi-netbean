@@ -1,0 +1,110 @@
+2016-06-14 14:09:42,354 [Thread-10] ERROR - com.puzzle.gui.MainFrame.run(193) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel4Status.run(MainFrame.java:182)
+2016-06-14 14:09:42,354 [Thread-9] ERROR - com.puzzle.gui.MainFrame.run(163) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel1Status.run(MainFrame.java:152)
+2016-06-14 14:09:42,434 [Thread-8] ERROR - com.puzzle.gui.MainFrame.run(222) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel2Status.run(MainFrame.java:211)
+2016-06-14 14:09:42,434 [Thread-11] ERROR - com.puzzle.gui.MainFrame.run(254) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel5Status.run(MainFrame.java:242)
+2016-06-14 14:09:42,770 [Thread-8] ERROR - com.puzzle.gui.MainFrame.run(222) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel2Status.run(MainFrame.java:211)
+2016-06-14 14:09:42,770 [Thread-11] ERROR - com.puzzle.gui.MainFrame.run(254) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel5Status.run(MainFrame.java:242)
+2016-06-14 14:09:42,778 [Thread-10] ERROR - com.puzzle.gui.MainFrame.run(193) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel4Status.run(MainFrame.java:182)
+2016-06-14 14:09:42,786 [Thread-9] ERROR - com.puzzle.gui.MainFrame.run(163) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel1Status.run(MainFrame.java:152)
+2016-06-14 14:09:43,106 [Thread-8] ERROR - com.puzzle.gui.MainFrame.run(222) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel2Status.run(MainFrame.java:211)
+2016-06-14 14:09:43,106 [Thread-11] ERROR - com.puzzle.gui.MainFrame.run(254) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel5Status.run(MainFrame.java:242)
+2016-06-14 14:09:43,202 [Thread-10] ERROR - com.puzzle.gui.MainFrame.run(193) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel4Status.run(MainFrame.java:182)
+2016-06-14 14:09:43,210 [Thread-9] ERROR - com.puzzle.gui.MainFrame.run(163) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel1Status.run(MainFrame.java:152)
+2016-06-14 14:09:43,442 [Thread-8] ERROR - com.puzzle.gui.MainFrame.run(222) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel2Status.run(MainFrame.java:211)
+2016-06-14 14:09:43,458 [Thread-11] ERROR - com.puzzle.gui.MainFrame.run(254) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel5Status.run(MainFrame.java:242)
+2016-06-14 14:09:43,626 [Thread-10] ERROR - com.puzzle.gui.MainFrame.run(193) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel4Status.run(MainFrame.java:182)
+2016-06-14 14:09:43,642 [Thread-9] ERROR - com.puzzle.gui.MainFrame.run(163) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel1Status.run(MainFrame.java:152)
+2016-06-14 14:09:43,786 [Thread-8] ERROR - com.puzzle.gui.MainFrame.run(222) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel2Status.run(MainFrame.java:211)
+2016-06-14 14:09:43,802 [Thread-11] ERROR - com.puzzle.gui.MainFrame.run(254) | 
+java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.puzzle.gui.MainFrame.setcheckJlabelGreen(MainFrame.java:131)
+	at com.puzzle.gui.MainFrame$setScheckJlabel5Status.run(MainFrame.java:242)
+2016-06-14 14:30:03,236 [main] ERROR - com.puzzle.gui.FileLockUtil.getFileLock(56) | 另一个程序已锁定文件的一部分，进程无法访问。
+java.io.IOException: 另一个程序已锁定文件的一部分，进程无法访问。
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:316)
+	at sun.nio.cs.StreamEncoder.close(StreamEncoder.java:149)
+	at java.io.OutputStreamWriter.close(OutputStreamWriter.java:233)
+	at com.puzzle.gui.FileLockUtil.getFileLock(FileLockUtil.java:49)
+	at com.puzzle.gui.MainFrame.main(MainFrame.java:1399)
+2016-06-14 14:33:10,567 [main] ERROR - com.puzzle.gui.FileLockUtil.getFileLock(56) | 另一个程序已锁定文件的一部分，进程无法访问。
+java.io.IOException: 另一个程序已锁定文件的一部分，进程无法访问。
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:316)
+	at sun.nio.cs.StreamEncoder.close(StreamEncoder.java:149)
+	at java.io.OutputStreamWriter.close(OutputStreamWriter.java:233)
+	at com.puzzle.gui.FileLockUtil.getFileLock(FileLockUtil.java:49)
+	at com.puzzle.gui.MainFrame.main(MainFrame.java:1399)

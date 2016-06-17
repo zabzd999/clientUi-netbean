@@ -1,0 +1,397 @@
+2016-06-07 09:26:46,352 [Thread-12] ERROR - kafka.utils.Utils$.apply(106) | fetching topic metadata for topics [Set(cusQingdanTopic)] from broker [ArrayBuffer(id:0,host:172.16.0.160,port:9092)] failed
+kafka.common.KafkaException: fetching topic metadata for topics [Set(cusQingdanTopic)] from broker [ArrayBuffer(id:0,host:172.16.0.160,port:9092)] failed
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:72)
+	at kafka.producer.BrokerPartitionInfo.updateInfo(BrokerPartitionInfo.scala:82)
+	at kafka.producer.async.DefaultEventHandler$$anonfun$handle$1.apply$mcV$sp(DefaultEventHandler.scala:67)
+	at kafka.utils.Utils$.swallow(Utils.scala:172)
+	at kafka.utils.Logging$class.swallowError(Logging.scala:106)
+	at kafka.utils.Utils$.swallowError(Utils.scala:45)
+	at kafka.producer.async.DefaultEventHandler.handle(DefaultEventHandler.scala:67)
+	at kafka.producer.Producer.send(Producer.scala:77)
+	at kafka.javaapi.producer.Producer.send(Producer.scala:33)
+	at com.puzzle.module.send.kafkaClient.KafkaSingtonProducerClient.sendMessage(KafkaSingtonProducerClient.java:60)
+	at com.puzzle.module.send.excutor.MessageSendExcutor.excute(MessageSendExcutor.java:98)
+	at com.puzzle.module.send.listener.monitorSendPathListener.onFileCreate(monitorSendPathListener.java:40)
+	at org.apache.commons.io.monitor.FileAlterationObserver.doCreate(FileAlterationObserver.java:379)
+	at org.apache.commons.io.monitor.FileAlterationObserver.checkAndNotify(FileAlterationObserver.java:330)
+	at org.apache.commons.io.monitor.FileAlterationObserver.checkAndNotify(FileAlterationObserver.java:304)
+	at org.apache.commons.io.monitor.FileAlterationMonitor.run(FileAlterationMonitor.java:182)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.channels.ClosedChannelException
+	at kafka.network.BlockingChannel.send(BlockingChannel.scala:100)
+	at kafka.producer.SyncProducer.liftedTree1$1(SyncProducer.scala:73)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:72)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:113)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:58)
+	... 16 more
+2016-06-07 09:27:07,389 [Thread-12] ERROR - kafka.producer.async.DefaultEventHandler.error(97) | Failed to collate messages by topic, partition due to: fetching topic metadata for topics [Set(cusQingdanTopic)] from broker [ArrayBuffer(id:0,host:172.16.0.160,port:9092)] failed
+2016-06-07 09:27:28,511 [Thread-12] ERROR - kafka.utils.Utils$.apply(106) | fetching topic metadata for topics [Set(cusQingdanTopic)] from broker [ArrayBuffer(id:0,host:172.16.0.160,port:9092)] failed
+kafka.common.KafkaException: fetching topic metadata for topics [Set(cusQingdanTopic)] from broker [ArrayBuffer(id:0,host:172.16.0.160,port:9092)] failed
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:72)
+	at kafka.producer.BrokerPartitionInfo.updateInfo(BrokerPartitionInfo.scala:82)
+	at kafka.producer.async.DefaultEventHandler$$anonfun$handle$2.apply$mcV$sp(DefaultEventHandler.scala:78)
+	at kafka.utils.Utils$.swallow(Utils.scala:172)
+	at kafka.utils.Logging$class.swallowError(Logging.scala:106)
+	at kafka.utils.Utils$.swallowError(Utils.scala:45)
+	at kafka.producer.async.DefaultEventHandler.handle(DefaultEventHandler.scala:78)
+	at kafka.producer.Producer.send(Producer.scala:77)
+	at kafka.javaapi.producer.Producer.send(Producer.scala:33)
+	at com.puzzle.module.send.kafkaClient.KafkaSingtonProducerClient.sendMessage(KafkaSingtonProducerClient.java:60)
+	at com.puzzle.module.send.excutor.MessageSendExcutor.excute(MessageSendExcutor.java:98)
+	at com.puzzle.module.send.listener.monitorSendPathListener.onFileCreate(monitorSendPathListener.java:40)
+	at org.apache.commons.io.monitor.FileAlterationObserver.doCreate(FileAlterationObserver.java:379)
+	at org.apache.commons.io.monitor.FileAlterationObserver.checkAndNotify(FileAlterationObserver.java:330)
+	at org.apache.commons.io.monitor.FileAlterationObserver.checkAndNotify(FileAlterationObserver.java:304)
+	at org.apache.commons.io.monitor.FileAlterationMonitor.run(FileAlterationMonitor.java:182)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.channels.ClosedChannelException
+	at kafka.network.BlockingChannel.send(BlockingChannel.scala:100)
+	at kafka.producer.SyncProducer.liftedTree1$1(SyncProducer.scala:73)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:72)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:113)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:58)
+	... 16 more
+2016-06-07 09:27:28,527 [Thread-12] ERROR - kafka.producer.async.DefaultEventHandler.error(97) | Failed to send requests for topics cusQingdanTopic with correlation ids in [0,2]
+2016-06-07 09:37:07,723 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(40) | D:\data\send\erpQQ - 副本 - 副本 (2) - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:37:54,843 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(40) | D:\data\send\erpQQ - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:41:18,877 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(40) | D:\data\send\erpQQ - 副本 - 副本 (3).xml文件校验失败
+2016-06-07 09:57:04,598 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (2) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:57:13,434 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (2) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:57:58,992 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (3) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:00,580 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (3) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:11,083 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (2) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:11,096 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (3) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:11,457 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (2) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:11,463 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (3) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:11,937 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (3) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:11,942 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:11,948 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:11,959 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (5) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:12,401 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (3) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:12,410 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:12,415 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:12,420 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (5) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:34,439 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (2) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:34,444 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (3) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:34,452 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 09:58:34,472 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:49,481 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (2) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:49,505 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (3) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:49,513 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:49,529 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:52,270 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (2) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:52,284 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (3) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:52,293 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:52,296 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:54,692 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (2) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:54,697 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (3) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:54,851 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:54,869 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:55,715 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (2) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:55,723 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (3) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:55,867 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:55,875 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:56,776 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (2) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:56,786 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (3) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:56,791 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:56,800 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:58,365 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (3) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:58,480 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (2) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:58,490 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:58,506 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:59,307 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (2) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:59,314 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (3) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:59,319 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:00:59,325 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:01:00,010 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (2) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:01:00,016 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (3) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:01:00,024 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:01:00,027 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:01:00,784 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (2) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:01:00,790 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (3) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:01:00,795 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:01:00,799 [Thread-12] ERROR - com.puzzle.module.send.excutor.MessageSendExcutor.excute(44) | D:\data\send\erpQQ - 副本 - 副本 (4) - 副本 - 副本 - 副本 - 副本 - 副本.xml文件校验失败
+2016-06-07 10:04:29,801 [Thread-12] ERROR - kafka.utils.Utils$.apply(106) | fetching topic metadata for topics [Set(qingdanTopic)] from broker [ArrayBuffer(id:0,host:172.16.0.160,port:9092)] failed
+kafka.common.KafkaException: fetching topic metadata for topics [Set(qingdanTopic)] from broker [ArrayBuffer(id:0,host:172.16.0.160,port:9092)] failed
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:72)
+	at kafka.producer.BrokerPartitionInfo.updateInfo(BrokerPartitionInfo.scala:82)
+	at kafka.producer.async.DefaultEventHandler$$anonfun$handle$1.apply$mcV$sp(DefaultEventHandler.scala:67)
+	at kafka.utils.Utils$.swallow(Utils.scala:172)
+	at kafka.utils.Logging$class.swallowError(Logging.scala:106)
+	at kafka.utils.Utils$.swallowError(Utils.scala:45)
+	at kafka.producer.async.DefaultEventHandler.handle(DefaultEventHandler.scala:67)
+	at kafka.producer.Producer.send(Producer.scala:77)
+	at kafka.javaapi.producer.Producer.send(Producer.scala:33)
+	at com.puzzle.module.send.kafkaClient.KafkaSingtonProducerClient.sendMessage(KafkaSingtonProducerClient.java:61)
+	at com.puzzle.module.send.excutor.MessageSendExcutor.excute(MessageSendExcutor.java:102)
+	at com.puzzle.module.send.listener.monitorSendPathListener.onFileCreate(monitorSendPathListener.java:37)
+	at org.apache.commons.io.monitor.FileAlterationObserver.doCreate(FileAlterationObserver.java:379)
+	at org.apache.commons.io.monitor.FileAlterationObserver.checkAndNotify(FileAlterationObserver.java:330)
+	at org.apache.commons.io.monitor.FileAlterationObserver.checkAndNotify(FileAlterationObserver.java:304)
+	at org.apache.commons.io.monitor.FileAlterationMonitor.run(FileAlterationMonitor.java:182)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.channels.ClosedChannelException
+	at kafka.network.BlockingChannel.send(BlockingChannel.scala:100)
+	at kafka.producer.SyncProducer.liftedTree1$1(SyncProducer.scala:73)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:72)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:113)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:58)
+	... 16 more
+2016-06-07 10:04:50,839 [Thread-12] ERROR - kafka.producer.async.DefaultEventHandler.error(97) | Failed to collate messages by topic, partition due to: fetching topic metadata for topics [Set(qingdanTopic)] from broker [ArrayBuffer(id:0,host:172.16.0.160,port:9092)] failed
+2016-06-07 10:05:11,992 [Thread-12] ERROR - kafka.utils.Utils$.apply(106) | fetching topic metadata for topics [Set(qingdanTopic)] from broker [ArrayBuffer(id:0,host:172.16.0.160,port:9092)] failed
+kafka.common.KafkaException: fetching topic metadata for topics [Set(qingdanTopic)] from broker [ArrayBuffer(id:0,host:172.16.0.160,port:9092)] failed
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:72)
+	at kafka.producer.BrokerPartitionInfo.updateInfo(BrokerPartitionInfo.scala:82)
+	at kafka.producer.async.DefaultEventHandler$$anonfun$handle$2.apply$mcV$sp(DefaultEventHandler.scala:78)
+	at kafka.utils.Utils$.swallow(Utils.scala:172)
+	at kafka.utils.Logging$class.swallowError(Logging.scala:106)
+	at kafka.utils.Utils$.swallowError(Utils.scala:45)
+	at kafka.producer.async.DefaultEventHandler.handle(DefaultEventHandler.scala:78)
+	at kafka.producer.Producer.send(Producer.scala:77)
+	at kafka.javaapi.producer.Producer.send(Producer.scala:33)
+	at com.puzzle.module.send.kafkaClient.KafkaSingtonProducerClient.sendMessage(KafkaSingtonProducerClient.java:61)
+	at com.puzzle.module.send.excutor.MessageSendExcutor.excute(MessageSendExcutor.java:102)
+	at com.puzzle.module.send.listener.monitorSendPathListener.onFileCreate(monitorSendPathListener.java:37)
+	at org.apache.commons.io.monitor.FileAlterationObserver.doCreate(FileAlterationObserver.java:379)
+	at org.apache.commons.io.monitor.FileAlterationObserver.checkAndNotify(FileAlterationObserver.java:330)
+	at org.apache.commons.io.monitor.FileAlterationObserver.checkAndNotify(FileAlterationObserver.java:304)
+	at org.apache.commons.io.monitor.FileAlterationMonitor.run(FileAlterationMonitor.java:182)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.channels.ClosedChannelException
+	at kafka.network.BlockingChannel.send(BlockingChannel.scala:100)
+	at kafka.producer.SyncProducer.liftedTree1$1(SyncProducer.scala:73)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:72)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:113)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:58)
+	... 16 more
+2016-06-07 10:05:12,023 [Thread-12] ERROR - kafka.producer.async.DefaultEventHandler.error(97) | Failed to send requests for topics qingdanTopic with correlation ids in [0,2]
+2016-06-07 10:14:12,707 [main] ERROR - com.puzzle.gui.FileLockUtil.getFileLock(56) | 另一个程序已锁定文件的一部分，进程无法访问。
+java.io.IOException: 另一个程序已锁定文件的一部分，进程无法访问。
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:316)
+	at sun.nio.cs.StreamEncoder.close(StreamEncoder.java:149)
+	at java.io.OutputStreamWriter.close(OutputStreamWriter.java:233)
+	at com.puzzle.gui.FileLockUtil.getFileLock(FileLockUtil.java:49)
+	at com.puzzle.gui.MainFrame.main(MainFrame.java:1294)
+2016-06-07 10:18:29,547 [main] ERROR - com.puzzle.gui.FileLockUtil.getFileLock(56) | 另一个程序已锁定文件的一部分，进程无法访问。
+java.io.IOException: 另一个程序已锁定文件的一部分，进程无法访问。
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:316)
+	at sun.nio.cs.StreamEncoder.close(StreamEncoder.java:149)
+	at java.io.OutputStreamWriter.close(OutputStreamWriter.java:233)
+	at com.puzzle.gui.FileLockUtil.getFileLock(FileLockUtil.java:49)
+	at com.puzzle.gui.MainFrame.main(MainFrame.java:1294)
+2016-06-07 10:20:43,707 [main] ERROR - com.puzzle.gui.FileLockUtil.getFileLock(56) | 另一个程序已锁定文件的一部分，进程无法访问。
+java.io.IOException: 另一个程序已锁定文件的一部分，进程无法访问。
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:316)
+	at sun.nio.cs.StreamEncoder.close(StreamEncoder.java:149)
+	at java.io.OutputStreamWriter.close(OutputStreamWriter.java:233)
+	at com.puzzle.gui.FileLockUtil.getFileLock(FileLockUtil.java:49)
+	at com.puzzle.gui.MainFrame.main(MainFrame.java:1297)
+2016-06-07 10:21:25,229 [main] ERROR - com.puzzle.gui.FileLockUtil.getFileLock(56) | 另一个程序已锁定文件的一部分，进程无法访问。
+java.io.IOException: 另一个程序已锁定文件的一部分，进程无法访问。
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:316)
+	at sun.nio.cs.StreamEncoder.close(StreamEncoder.java:149)
+	at java.io.OutputStreamWriter.close(OutputStreamWriter.java:233)
+	at com.puzzle.gui.FileLockUtil.getFileLock(FileLockUtil.java:49)
+	at com.puzzle.gui.MainFrame.main(MainFrame.java:1296)
+2016-06-07 10:22:44,116 [main] ERROR - com.puzzle.gui.FileLockUtil.getFileLock(56) | 另一个程序已锁定文件的一部分，进程无法访问。
+java.io.IOException: 另一个程序已锁定文件的一部分，进程无法访问。
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:316)
+	at sun.nio.cs.StreamEncoder.close(StreamEncoder.java:149)
+	at java.io.OutputStreamWriter.close(OutputStreamWriter.java:233)
+	at com.puzzle.gui.FileLockUtil.getFileLock(FileLockUtil.java:49)
+	at com.puzzle.gui.MainFrame.main(MainFrame.java:1296)
+2016-06-07 10:26:24,864 [main] ERROR - com.puzzle.gui.FileLockUtil.getFileLock(56) | 另一个程序已锁定文件的一部分，进程无法访问。
+java.io.IOException: 另一个程序已锁定文件的一部分，进程无法访问。
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:316)
+	at sun.nio.cs.StreamEncoder.close(StreamEncoder.java:149)
+	at java.io.OutputStreamWriter.close(OutputStreamWriter.java:233)
+	at com.puzzle.gui.FileLockUtil.getFileLock(FileLockUtil.java:49)
+	at com.puzzle.gui.MainFrame.main(MainFrame.java:1297)
+2016-06-07 10:29:08,991 [main] ERROR - com.puzzle.gui.FileLockUtil.getFileLock(56) | 另一个程序已锁定文件的一部分，进程无法访问。
+java.io.IOException: 另一个程序已锁定文件的一部分，进程无法访问。
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:316)
+	at sun.nio.cs.StreamEncoder.close(StreamEncoder.java:149)
+	at java.io.OutputStreamWriter.close(OutputStreamWriter.java:233)
+	at com.puzzle.gui.FileLockUtil.getFileLock(FileLockUtil.java:49)
+	at com.puzzle.gui.MainFrame.main(MainFrame.java:1294)
+2016-06-07 10:32:49,497 [main] ERROR - com.puzzle.gui.FileLockUtil.getFileLock(56) | 另一个程序已锁定文件的一部分，进程无法访问。
+java.io.IOException: 另一个程序已锁定文件的一部分，进程无法访问。
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:316)
+	at sun.nio.cs.StreamEncoder.close(StreamEncoder.java:149)
+	at java.io.OutputStreamWriter.close(OutputStreamWriter.java:233)
+	at com.puzzle.gui.FileLockUtil.getFileLock(FileLockUtil.java:49)
+	at com.puzzle.gui.MainFrame.main(MainFrame.java:1299)
+2016-06-07 10:49:06,523 [main] ERROR - com.puzzle.gui.FileLockUtil.getFileLock(56) | 另一个程序已锁定文件的一部分，进程无法访问。
+java.io.IOException: 另一个程序已锁定文件的一部分，进程无法访问。
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:316)
+	at sun.nio.cs.StreamEncoder.close(StreamEncoder.java:149)
+	at java.io.OutputStreamWriter.close(OutputStreamWriter.java:233)
+	at com.puzzle.gui.FileLockUtil.getFileLock(FileLockUtil.java:49)
+	at com.puzzle.gui.MainFrame.main(MainFrame.java:1267)
+2016-06-07 10:51:02,089 [main] ERROR - com.puzzle.gui.FileLockUtil.getFileLock(56) | 另一个程序已锁定文件的一部分，进程无法访问。
+java.io.IOException: 另一个程序已锁定文件的一部分，进程无法访问。
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:345)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:316)
+	at sun.nio.cs.StreamEncoder.close(StreamEncoder.java:149)
+	at java.io.OutputStreamWriter.close(OutputStreamWriter.java:233)
+	at com.puzzle.gui.FileLockUtil.getFileLock(FileLockUtil.java:49)
+	at com.puzzle.gui.MainFrame.main(MainFrame.java:1268)
+2016-06-07 13:23:52,380 [ActiveMQ Session Task-1] ERROR - org.apache.activemq.thread.TaskRunnerFactory.uncaughtException(182) | Error in thread 'ActiveMQ Session Task-1'
+java.util.concurrent.RejectedExecutionException: Task org.apache.activemq.thread.PooledTaskRunner$1@e4508b rejected from java.util.concurrent.ThreadPoolExecutor@163fa09[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:155)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-06-07 13:25:06,446 [ActiveMQ Session Task-1] ERROR - org.apache.activemq.thread.TaskRunnerFactory.uncaughtException(182) | Error in thread 'ActiveMQ Session Task-1'
+java.util.concurrent.RejectedExecutionException: Task org.apache.activemq.thread.PooledTaskRunner$1@c2f37e rejected from java.util.concurrent.ThreadPoolExecutor@ffe3f2[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:155)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-06-07 13:25:26,956 [ActiveMQ Session Task-1] ERROR - org.apache.activemq.thread.TaskRunnerFactory.uncaughtException(182) | Error in thread 'ActiveMQ Session Task-1'
+java.util.concurrent.RejectedExecutionException: Task org.apache.activemq.thread.PooledTaskRunner$1@b2818f rejected from java.util.concurrent.ThreadPoolExecutor@157f57e[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:155)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-06-07 13:25:34,257 [ActiveMQ Session Task-1] ERROR - org.apache.activemq.thread.TaskRunnerFactory.uncaughtException(182) | Error in thread 'ActiveMQ Session Task-1'
+java.util.concurrent.RejectedExecutionException: Task org.apache.activemq.thread.PooledTaskRunner$1@e3e90f rejected from java.util.concurrent.ThreadPoolExecutor@d9f1e3[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:155)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-06-07 13:25:41,150 [ActiveMQ Session Task-1] ERROR - org.apache.activemq.thread.TaskRunnerFactory.uncaughtException(182) | Error in thread 'ActiveMQ Session Task-1'
+java.util.concurrent.RejectedExecutionException: Task org.apache.activemq.thread.PooledTaskRunner$1@65c4d0 rejected from java.util.concurrent.ThreadPoolExecutor@15c7277[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:155)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-06-07 13:26:31,789 [ActiveMQ Session Task-1] ERROR - org.apache.activemq.thread.TaskRunnerFactory.uncaughtException(182) | Error in thread 'ActiveMQ Session Task-1'
+java.util.concurrent.RejectedExecutionException: Task org.apache.activemq.thread.PooledTaskRunner$1@57f107 rejected from java.util.concurrent.ThreadPoolExecutor@1913b29[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:155)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-06-07 13:27:27,062 [ActiveMQ Session Task-1] ERROR - org.apache.activemq.thread.TaskRunnerFactory.uncaughtException(182) | Error in thread 'ActiveMQ Session Task-1'
+java.util.concurrent.RejectedExecutionException: Task org.apache.activemq.thread.PooledTaskRunner$1@e729a2 rejected from java.util.concurrent.ThreadPoolExecutor@5e7326[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:155)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-06-07 13:39:54,885 [ActiveMQ Session Task-1] ERROR - org.apache.activemq.thread.TaskRunnerFactory.uncaughtException(182) | Error in thread 'ActiveMQ Session Task-1'
+java.util.concurrent.RejectedExecutionException: Task org.apache.activemq.thread.PooledTaskRunner$1@1536eb4 rejected from java.util.concurrent.ThreadPoolExecutor@891f64[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:155)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-06-07 13:39:59,348 [ActiveMQ Session Task-1] ERROR - org.apache.activemq.thread.TaskRunnerFactory.uncaughtException(182) | Error in thread 'ActiveMQ Session Task-1'
+java.util.concurrent.RejectedExecutionException: Task org.apache.activemq.thread.PooledTaskRunner$1@126c1c6 rejected from java.util.concurrent.ThreadPoolExecutor@17bd8d0[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:155)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-06-07 13:39:59,348 [ActiveMQ Session Task-1] ERROR - org.apache.activemq.thread.TaskRunnerFactory.uncaughtException(182) | Error in thread 'ActiveMQ Session Task-1'
+java.util.concurrent.RejectedExecutionException: Task org.apache.activemq.thread.PooledTaskRunner$1@169abdd rejected from java.util.concurrent.ThreadPoolExecutor@923efe[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:155)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-06-07 13:40:43,120 [ActiveMQ Session Task-1] ERROR - org.apache.activemq.thread.TaskRunnerFactory.uncaughtException(182) | Error in thread 'ActiveMQ Session Task-1'
+java.util.concurrent.RejectedExecutionException: Task org.apache.activemq.thread.PooledTaskRunner$1@b7f028 rejected from java.util.concurrent.ThreadPoolExecutor@1f7f557[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:155)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-06-07 13:51:17,421 [ActiveMQ Session Task-1] ERROR - org.apache.activemq.thread.TaskRunnerFactory.uncaughtException(182) | Error in thread 'ActiveMQ Session Task-1'
+java.util.concurrent.RejectedExecutionException: Task org.apache.activemq.thread.PooledTaskRunner$1@4a26e8 rejected from java.util.concurrent.ThreadPoolExecutor@407ed5[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:155)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-06-07 13:51:21,843 [ActiveMQ Session Task-1] ERROR - org.apache.activemq.thread.TaskRunnerFactory.uncaughtException(182) | Error in thread 'ActiveMQ Session Task-1'
+java.util.concurrent.RejectedExecutionException: Task org.apache.activemq.thread.PooledTaskRunner$1@eb6e4c rejected from java.util.concurrent.ThreadPoolExecutor@96569e[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:155)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)

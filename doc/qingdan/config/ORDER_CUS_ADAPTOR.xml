@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Inventory leaf="0" repeat="0" name="Inventory">
+		<InventoryHead leaf="0" repeat="1" name="InventoryHead">
+			<guid leaf="1">GUID</guid>
+			<appType leaf="1">MODIFYMARK</appType>
+			<appTime leaf="1">APPTIME</appTime>
+			<appStatus leaf="1">APPSTATUS</appStatus>
+			<orderNo leaf="1">ORDERNO</orderNo>
+			<ebpCode leaf="1">ECPCODE</ebpCode>
+			<ebpName leaf="1">ECPNAME</ebpName>
+			<ebcCode leaf="1">CBECODE</ebcCode>
+			<ebcName leaf="1">CBENAME</ebcName>
+			<logisticsNo leaf="1">BILLNO</logisticsNo>
+			<logisticsCode leaf="1">LOGISTICSCODE</logisticsCode>
+			<logisticsName    leaf="1">LOGISTICSNAME</logisticsName>
+			<copNo leaf="1">COPNO</copNo>
+			<preNo leaf="1">PRENO</preNo>
+			<assureCode leaf="1">ASSURECODE</assureCode>
+			<emsNo leaf="1">LMSNO</emsNo>
+			<invtNo leaf="1">CBECBILLNO</invtNo>
+			<ieFlag leaf="1">IETYPE</ieFlag>
+			<declTime leaf="1">DECLAREDATE</declTime>
+			<customsCode leaf="1">CUSTOMSCODE</customsCode>
+			<portCode leaf="1">IEPORT</portCode>
+			<ieDate leaf="1">IEDATE</ieDate>
+			<buyerIdType leaf="1">IDTYPE</buyerIdType>
+			<buyerIdNumber leaf="1">BUYERIDNUMBER</buyerIdNumber>
+			<buyerName leaf="1">BUYERNAME</buyerName>
+			<buyerTelephone leaf="1">BUYERTELEPHONE</buyerTelephone>
+			<consigneeAddress leaf="1">CONSIGNEEADDRESS</consigneeAddress>
+			<agentCode leaf="1">DECLCODE</agentCode>
+			<agentName leaf="1">DECLNAME</agentName>
+			<areaCode leaf="1">AREACODE</areaCode>
+			<areaName leaf="1">AREANAME</areaName>
+			<tradeMode leaf="1">TRADEMODE</tradeMode>
+			<trafMode leaf="1">TRAFWAY</trafMode>
+			<trafNo leaf="1">SHIPNAME</trafNo>
+			<voyageNo leaf="1">VOYAGENO</voyageNo>
+			<billNo leaf="1">PARENTBILLNO</billNo>
+			<loctNo leaf="1">LOCTNO</loctNo>
+			<licenseNo leaf="1">LICENSENO</licenseNo>
+			<country leaf="1">COUNTRYCODE</country>
+			<freight leaf="1">FREIGHT</freight>
+			<insuredFee leaf="1">OTHERFEE</insuredFee>
+			<currency leaf="1">CURRENCY</currency>
+			<wrapType leaf="1">WRAPTYPE</wrapType>
+			<packNo leaf="1">PACKNO</packNo>
+			<grossWeight leaf="1">WEIGHT</grossWeight>
+			<netWeight leaf="1">NETWEIGHT</netWeight>
+			<note leaf="1">NOTE</note>
+		</InventoryHead>
+		<GOODS leaf="0" repeat="3" name="GOODS">
+			<InventoryList leaf="0" repeat="1" name="InventoryList">			
+				<gnum leaf="1">GNO</gnum>
+				<itemRecordNo leaf="1">ITEMNO</itemRecordNo>
+				<itemNo leaf="1">GOODSNO</itemNo>
+				<itemName leaf="1">SHELFGOODSNAME</itemName>
+				<gcode leaf="1">HSCODE</gcode>
+				<gname leaf="1">GOODSNAME</gname>
+				<gmodel leaf="1">GOODSMODEL</gmodel>
+				<barCode leaf="1">BARCODE</barCode>
+				<country leaf="1">COUNTRY</country>
+				<currency leaf="1">CURRENCY</currency>
+				<qty leaf="1">QUANTITY</qty>
+				<unit leaf="1">UNIT</unit>
+				<qty1 leaf="1">QTY1</qty1>
+				<unit1 leaf="1">UNIT1</unit1>
+				<qty2 leaf="1">QTY2</qty2>
+				<unit2 leaf="1">UNIT2</unit2>
+				<price leaf="1">RMBPRICE</price>
+				<totalPrice leaf="1">TOTAL</totalPrice>
+				<note leaf="1">note</note>
+			</InventoryList>
+		</GOODS>
+	</Inventory>

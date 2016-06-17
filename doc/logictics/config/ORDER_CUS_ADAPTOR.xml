@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Logistics leaf="0" repeat="0" name="Logistics">
+	<LogisticsHead leaf="0" repeat="1" name="LogisticsHead">
+		<guid leaf="1">GUID</guid>
+		<appType leaf="1">MODIFYMARK</appType>	
+		<appTime leaf="1">DECLAREDATE</appTime>	
+		<appStatus leaf="1">APPSTATUS</appStatus>
+		<logisticsCode leaf="1">DELIVERYENTERPRISECODE</logisticsCode>
+		<logisticsName leaf="1">DELIVERYENTERPRISENAME</logisticsName>
+		<logisticsNo leaf="1">TRANSFERNUMBER</logisticsNo>
+		<billNo leaf="1">TOTALTRANSFERNUMBER</billNo>
+		<freight leaf="1">FREIGHT</freight>
+		<insuredFee leaf="1">SUPPORTVALUE</insuredFee>
+		<currency leaf="1">无</currency>
+		<weight leaf="1">WEIGHT</weight>
+		<packNo leaf="1">PACKNUM</packNo>
+		<goodsInfo leaf="1">GOODSINFO</goodsInfo>
+		<consignee leaf="1">COLLECTIONUSERNAME</consignee>
+		<consigneeAddress leaf="1">COLLECTIONUSERNAME</consigneeAddress>
+		<consigneeTelephone leaf="1">COLLECTIONUSERTELEPHONE</consigneeTelephone>
+		<note leaf="1">REMARK</note>
+	</LogisticsHead>
+</Logistics>

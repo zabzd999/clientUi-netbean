@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Order leaf="0" repeat="0" name="Order">
+	<OrderHead leaf="0" repeat="1" name="OrderHead">
+		<guid leaf="1">GUID</guid>
+		<appType leaf="1">MODIFYMARK</appType>
+		<appTime leaf="1">SUBMITTIME</appTime>
+		<appStatus leaf="1">APPSTATUS</appStatus>
+		<orderType leaf="1">IETYPE</orderType>
+		<orderNo leaf="1">ORDERID</orderNo>
+		<ebpCode leaf="1">ECPCODE</ebpCode>
+		<ebpName leaf="1">ECPNAME</ebpName>
+		<ebcCode leaf="1">CBECODE</ebcCode>
+		<ebcName leaf="1">CBENAME</ebcName>
+		<goodsValue leaf="1">GOODSVALUE</goodsValue>
+		<freight leaf="1">FREIGHT</freight>
+		<discount leaf="1">OTHERPAYMENT</discount>
+		<taxTotal leaf="1">TAXTOTAL</taxTotal>
+		<acturalPaid leaf="1">ACTURALPAID</acturalPaid>
+		<currency leaf="1">CURRENCY</currency>
+		<buyerRegNo leaf="1">BUYERREGNO</buyerRegNo>
+		<buyerName leaf="1">BUYERNAME</buyerName>
+		<buyerIdType leaf="1">IDTYPE</buyerIdType>
+		<buyerIdNumber leaf="1">CUSTOMERID</buyerIdNumber>
+		<payCode leaf="1">PAYENTERPRISECODE</payCode>
+		<payName leaf="1">PAYENTERPRISENAME</payName>
+		<payTransactionId leaf="1">PAYNUMBER</payTransactionId>
+		<batchNumbers leaf="1">BATCHNUMBERS</batchNumbers>
+		<consignee leaf="1">COLLECTIONUSERNAME</consignee>
+		<consigneeTelephone leaf="1">COLLECTIONUSERTELEPHONE</consigneeTelephone>		
+		<consigneeAddress leaf="1">COLLECTIONUSERADDRESS</consigneeAddress>		
+		<consigneeDistrict leaf="1">CONSIGNEEDITRICT</consigneeDistrict>
+		<note leaf="1">REMARK</note>
+	</OrderHead>
+	<ORDERLIST leaf="0" repeat="3" name="ORDERLIST">
+	   <OrderList leaf="0" repeat="1" name="OrderList">
+		<gnum leaf="1">GNUM</gnum>
+		<itemNo leaf="1">ITEMNO</itemNo>
+		<itemName leaf="1">SHELFGOODSNAME</itemName>
+		<itemDescribe leaf="1">DESCRIBE</itemDescribe>
+		<barCode leaf="1">BARCODE</barCode>
+		<unit leaf="1">UNIT</unit>
+		<qty leaf="1">AMOUNT</qty>
+		<price leaf="1">GOODPRICE</price>
+		<totalPrice leaf="1">ORDERSUM</totalPrice>
+		<currency leaf="1">COIN</currency>
+		<country leaf="1">SOURCEPRODUCERCOUNTRY</country>
+		<note leaf="1">REMARKSINSP</note>
+		</OrderList>
+	</ORDERLIST>
+</Order>

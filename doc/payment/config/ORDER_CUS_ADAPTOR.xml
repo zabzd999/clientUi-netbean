@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Payment leaf="0" repeat="0" name="Payment">
+	<PaymentHead leaf="0" repeat="1" name="PaymentHead">
+		<guid leaf="1">GUID</guid>
+		<appType leaf="1">MODIFYMARK</appType>
+		<appTime leaf="1">APPTIME</appTime>
+		<appStatus leaf="1">APPSTATUS</appStatus>
+		<payCode leaf="1">PAYENTERPRISECODE</payCode>
+		<payName leaf="1">PAYENTERPRISENAME</payName>
+		<payTransactionId leaf="1">PAYNUMBER</payTransactionId>
+		<orderNo leaf="1">ORDERID</orderNo>
+		<ebpCode leaf="1">ECPCODE</ebpCode>
+		<ebpName leaf="1">ECPNAME</ebpName>
+		<payerIdType leaf="1">IDTYPE</payerIdType>
+		<payerIdNumber leaf="1">CUSTOMERID</payerIdNumber>
+		<payerName leaf="1">PAYUSER</payerName>
+		<telephone leaf="1">TELEPHONE</telephone>
+		<amountPaid leaf="1">FEE</amountPaid>
+		<currency leaf="1">MONETARYTYPE</currency>
+		<payTime leaf="1">PAYTIME</payTime>
+		<note leaf="1">REMARK</note>
+		</PaymentHead>
+</Payment>
